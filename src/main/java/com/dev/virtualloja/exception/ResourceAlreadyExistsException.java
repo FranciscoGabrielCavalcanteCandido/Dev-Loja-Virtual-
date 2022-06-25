@@ -1,5 +1,13 @@
 package com.dev.virtualloja.exception;
 
-public class ResourceAlreadyExistsException {
+public class ResourceAlreadyExistsException extends Exception{
+	
+	public ResourceAlreadyExistsException() {
+		
+	}
+	
+	public ResourceAlreadyExistsException(String msg) {
+		super (msg);
+	}
 
 }

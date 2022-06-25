@@ -33,7 +33,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 @RestController
 @RequestMapping("/api")
 @Tag(name = "Produto", description = "Controle Produto")
-public class ControleProduto {
+public class ProdutoController {
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	@Autowired
