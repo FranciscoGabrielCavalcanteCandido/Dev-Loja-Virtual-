@@ -2,12 +2,14 @@ package com.dev.virtualloja.controller;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+
 import javax.validation.Valid;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.data.domain.Pageable;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -22,11 +24,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.virtual.loja.domain.Marca;
-import com.virtual.loja.exception.BadResourceException;
-import com.virtual.loja.exception.ResourceAlreadyExistsException;
-import com.virtual.loja.exception.ResourceNotFoundException;
-import com.virtual.loja.service.ServicoMarca;
+import com.dev.virtualloja.domain.Marca;
+import com.dev.virtualloja.exception.BadResourceException;
+import com.dev.virtualloja.exception.ResourceAlreadyExistsException;
+import com.dev.virtualloja.exception.ResourceNotFoundException;
+import com.dev.virtualloja.service.ServicoMarca;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;

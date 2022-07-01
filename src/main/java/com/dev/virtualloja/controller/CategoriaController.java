@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
+import com.dev.virtualloja.service.CategoriaService;
 import com.virtual.loja.domain.Categoria;
 import com.virtual.loja.exception.BadResourceException;
 import com.virtual.loja.exception.ResourceAlreadyExistsException;
@@ -41,7 +42,7 @@ public class CategoriaController {
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	@Autowired
-	private ServicoCategoria servicoCategoria;
+	private CategoriaService servicoCategoria;
 
 	@GetMapping(value = "/categoria", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Page<Categoria>> findAll(
